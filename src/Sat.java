@@ -3,6 +3,19 @@ public class Sat {
     public Sat(int sati, int minute, int sekunde) {
         this.sati = sati; this.minute = minute; this.sekunde = sekunde;
     }
+
+    public int getSati() {
+        return sati;
+    }
+
+    public int getMinute() {
+        return minute;
+    }
+
+    public int getSekunde() {
+        return sekunde;
+    }
+
     public void Sljedeci() {
         this.sekunde++;
         if(this.sekunde == 60) {sekunde++; minute++;}
